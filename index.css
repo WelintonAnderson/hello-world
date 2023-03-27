@@ -1,0 +1,32 @@
+body {
+  background-color: blueviolet;
+  margin: 0;
+}
+.container {
+  min-width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+.section {
+  display: flex;
+  flex-direction: column; /* muda a direção do flex pra vertical */
+  align-items: center;
+  color: white;
+}
+
+.section a {
+  color: black;
+  text-decoration: none;
+} /* o none tirou o sublinhado */
+
+.section a:visited {
+  color: green;
+} /* deixa verde depois que clicou */
+
+.section a:hover {
+  color: red;
+} /* passa o mouse por cima e fica vermelho (o a ali é pra ser só no link) 
+cores permanentes eu coloco antes, e cores temporárias coloca pra baixo (ele lê de cima pra baixo)*/
